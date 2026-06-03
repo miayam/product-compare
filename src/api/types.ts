@@ -11,6 +11,13 @@ export interface Product {
   tags: string[];
 }
 
+export interface ProductsResponse {
+  products: Product[];
+  total: number;
+  skip: number;
+  limit: number;
+}
+
 export interface CartItem extends Product {
   quantity: number;
 }

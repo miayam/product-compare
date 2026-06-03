@@ -1,14 +1,18 @@
-import type { Product } from "./types";
+import type { Product, ProductsResponse } from "./types";
 
 const BASE_URL = "https://dummyjson.com";
 
-export const fetchProducts = async (query: string): Promise<Product[]> => {
+export const fetchProducts = async (
+  query: string,
+  skip: number = 0,
+  limit: number = 10,
+): Promise<ProductsResponse> => {
   const endpoint = query
-    ? `${BASE_URL}/products/search?q=${query}`
-    : `${BASE_URL}/products?limit=20`;
+    ? `${BASE_URL}/products/search?q=${query}&limit=${limit}&skip=${skip}`
+    : `${BASE_URL}/products?limit=${limit}&skip=${skip}`;
+
   const res = await fetch(endpoint);
-  const data = await res.json();
-  return data.products;
+  return res.json();
 };
 
 export const fetchProduct = async (id: number): Promise<Product> => {
