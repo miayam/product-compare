@@ -15,14 +15,14 @@ const ComparisonTable = ({ products, onAddToCart }: Props) => {
 
   return (
     <div className="border border-black overflow-x-auto w-full bg-white">
-      <table className="w-full min-w-[600px] border-collapse text-sm font-mono">
+      <table className="w-full min-w-150 border-collapse text-sm font-mono">
         <thead>
           <tr className="border-b border-black">
-            <th className="p-3 bg-black text-white sticky left-0 z-10 min-w-[120px] text-left">
+            <th className="p-3 bg-black text-white sticky left-0 z-10 min-w-30 text-left">
               Spec
             </th>
             {products.map((p) => (
-              <th key={p.id} className="p-3 min-w-[200px] text-left">
+              <th key={p.id} className="p-3 min-w-50 text-left">
                 {p.title}
               </th>
             ))}

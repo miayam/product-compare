@@ -12,7 +12,7 @@ function Cart() {
       {cartProducts.length === 0 ? (
         <p className="text-gray-500 font-mono mb-6">Your cart is empty</p>
       ) : (
-        <div className="space-y-4 mb-6">
+        <div className="space-y-4 mb-6 text-black">
           {cartProducts.map((product) => (
             <div
               key={product?.id}
@@ -51,7 +51,7 @@ function Cart() {
             {suggestions.slice(0, 3).map((suggestion) => (
               <div
                 key={suggestion.id}
-                className="flex items-center justify-between bg-gray-100 p-2 border border-gray-300"
+                className="flex items-center justify-between bg-gray-100 p-2 border text-black border-gray-300"
               >
                 <div className="flex items-center space-x-2">
                   <img
