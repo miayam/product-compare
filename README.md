@@ -1,8 +1,6 @@
 # MONO-COMPARE
 
 Aplikasi mini e-commerce dengan fitur perbandingan produk dan keranjang belanja cerdas. Aplikasi ini menggunakan data dari dummyjson.com dan menampilkan antarmuka hitam-putih yang responsif.
-
-Demo:
 > https://expatify.netlify.app
 
 Fitur Utama:
