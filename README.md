@@ -2,6 +2,9 @@
 
 Aplikasi mini e-commerce dengan fitur perbandingan produk dan keranjang belanja cerdas. Aplikasi ini menggunakan data dari dummyjson.com dan menampilkan antarmuka hitam-putih yang responsif.
 
+Demo:
+> https://expatify.netlify.app
+
 Fitur Utama:
   * 🛍️ Katalog Produk & Pencarian: Jelajahi daftar produk dengan fitur pencarian real-time dan paginasi halaman.
   * ⚖️ Perbandingan Produk (Side-by-Side): Pilih dua produk untuk dibandingkan spesifikasinya secara berdampingan. Tabel perbandingan dioptimalkan untuk tampilan mobile dengan kolom atribut yang sticky (tetap terlihat saat scroll ke samping).
